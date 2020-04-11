@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b51b50-0866-4b71-a2f1-9c372a25b9d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/abstracts/AbstractTimeScopeEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/abstracts/AbstractUUIDEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/base/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/enums/CarStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/enums/CustomerStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/enums/TicketStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/repository/CarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/repository/TicketRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/abstracts/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/abstracts/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/base/BaseRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/base/BaseRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/CarApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/CarApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/entity/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/entity/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/entity/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/CarServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +61,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -107,6 +120,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hk.com.prudential.assignment.repository" />
       <recent name="hk.com.prudential.assignment.json.description" />
       <recent name="hk.prudential.assignment.controller" />
     </key>
@@ -163,7 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586522433258</updated>
       <workItem from="1586522435038" duration="6400000" />
-      <workItem from="1586574688118" duration="18675000" />
+      <workItem from="1586574688118" duration="22501000" />
     </task>
     <servers />
   </component>
@@ -175,10 +189,10 @@
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
     <state x="2560" y="-5" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586592971938" />
-    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser" timestamp="1586600175712">
+    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser" timestamp="1586604465231">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
-    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586600175712" />
+    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586604465231" />
     <state width="2518" height="385" key="GridCell.Tab.0.bottom" timestamp="1586598330073">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>

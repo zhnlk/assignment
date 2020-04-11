@@ -1,9 +1,14 @@
 package hk.com.prudential.assignment.entity;
 
+import hk.com.prudential.assignment.abstracts.AbstractTimeScopeEntity;
+import hk.com.prudential.assignment.enums.CustomerStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 
 /**
  * @author zhnlk
@@ -14,9 +19,12 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Customer {
+public class Customer extends AbstractTimeScopeEntity {
 
     private String name;
+
+    @Enumerated(EnumType.STRING)
+    private CustomerStatus status;
 
     private String ticket;
 

@@ -14,23 +14,23 @@ import org.springframework.web.bind.annotation.RestController;
 public class BaseRestController extends AbstractController {
 
     protected RestResponse error(RestCode responseCode) {
-        return new RestResponse<Object>().error(responseCode);
+        return new RestResponse().error(responseCode);
     }
 
     protected RestResponse error(String msg) {
-        return new RestResponse<Object>().error(RestCode.ERROR, msg);
+        return new RestResponse().error(RestCode.ERROR, msg);
     }
 
-    protected RestResponse error(RestCode responseCode, String... msgs) {
-        return new RestResponse<Object>().error(responseCode, String.format(responseCode.getMsg(), msgs));
+    protected RestResponse error(RestCode responseCode, String... msg) {
+        return new RestResponse().error(responseCode, String.format(responseCode.getMsg(), msg));
     }
 
     protected RestResponse success() {
         return new RestResponse().success();
     }
 
-    protected RestResponse success(Object param) {
-        return new RestResponse().success(param);
+    protected RestResponse success(Object data) {
+        return new RestResponse().success(data);
     }
 
 }

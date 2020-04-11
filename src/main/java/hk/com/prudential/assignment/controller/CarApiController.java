@@ -1,13 +1,14 @@
 package hk.com.prudential.assignment.controller;
 
 import hk.com.prudential.assignment.base.BaseRestController;
+import hk.com.prudential.assignment.entity.Car;
+import hk.com.prudential.assignment.model.BasePageRequest;
 import hk.com.prudential.assignment.model.RestResponse;
 import hk.com.prudential.assignment.service.CarService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.data.domain.Page;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author zhnlk
@@ -26,9 +27,17 @@ public class CarApiController extends BaseRestController {
         return "pong";
     }
 
+    @ApiOperation(value = "save the car object")
+    @PostMapping("/save")
+    public RestResponse save(@RequestBody Car car){
+        Car save = carService.save(car);
+        return success(save);
+    }
+
     @ApiOperation(value = "list")
     @GetMapping("/list")
-    public RestResponse list() {
-        return success();
+    public RestResponse list(BasePageRequest basePageRequest) {
+        Page<Car> cars = carService.listAll(basePageRequest.getPageable());
+        return success(cars);
     }
 }
