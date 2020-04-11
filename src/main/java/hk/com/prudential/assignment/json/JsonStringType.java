@@ -1,6 +1,7 @@
 package hk.com.prudential.assignment.json;
 
 import hk.com.prudential.assignment.json.description.JsonStringSqlTypeDescriptor;
+import hk.com.prudential.assignment.json.description.JsonTypeDescriptor;
 import lombok.Getter;
 import org.hibernate.type.AbstractSingleColumnStandardBasicType;
 import org.hibernate.usertype.DynamicParameterizedType;
@@ -15,14 +16,19 @@ import java.util.Properties;
 public class JsonStringType extends AbstractSingleColumnStandardBasicType<Object> implements DynamicParameterizedType {
 
     @Getter
-    String name = "jsonb";
+    String name = "json";
 
     public JsonStringType() {
-        super(JsonStringSqlTypeDescriptor.INSTANCE,new jsontypedes);
+        super(JsonStringSqlTypeDescriptor.INSTANCE, new JsonTypeDescriptor());
     }
 
     @Override
-    public void setParameterValues(Properties properties) {
-        (jsontypede)getJavaTypeDescriptor()
+    protected boolean registerUnderJavaType() {
+        return true;
+    }
+
+    @Override
+    public void setParameterValues(Properties parameters) {
+        ((JsonTypeDescriptor) getJavaTypeDescriptor()).setParameterValues(parameters);
     }
 }

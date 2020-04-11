@@ -1,5 +1,7 @@
 package hk.com.prudential.assignment.abstracts;
 
+import hk.com.prudential.assignment.json.JsonBinaryType;
+import hk.com.prudential.assignment.json.JsonStringType;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
 

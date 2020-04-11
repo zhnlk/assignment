@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b51b50-0866-4b71-a2f1-9c372a25b9d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/json/description/JsonBinarySqlTypeDescriptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/utils/JacksonUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/abstracts/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/abstracts/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/json/JsonBinaryType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/json/JsonBinaryType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/json/JsonStringType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/json/JsonStringType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/json/description/JsonTypeDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/json/description/JsonTypeDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/utils/JsonUtil.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +112,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hk.com.prudential.assignment.json.description" />
       <recent name="hk.prudential.assignment.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -160,7 +168,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586522433258</updated>
       <workItem from="1586522435038" duration="6400000" />
-      <workItem from="1586574688118" duration="15933000" />
+      <workItem from="1586574688118" duration="17898000" />
     </task>
     <servers />
   </component>
@@ -172,10 +180,10 @@
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
     <state x="2560" y="-5" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586592971938" />
-    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser" timestamp="1586596584933">
+    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser" timestamp="1586600175712">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
-    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586596584933" />
+    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586600175712" />
     <state width="2518" height="385" key="GridCell.Tab.0.bottom" timestamp="1586598330073">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
@@ -232,10 +240,10 @@
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
     <state x="2637" y="163" key="com.intellij.ide.util.TipDialog/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586574693826" />
-    <state x="2618" y="87" width="683" height="486" key="find.popup" timestamp="1586598239518">
+    <state x="2618" y="87" width="683" height="486" key="find.popup" timestamp="1586599807306">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
-    <state x="2618" y="87" width="683" height="486" key="find.popup/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586598239518" />
+    <state x="2618" y="87" width="683" height="486" key="find.popup/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586599807306" />
     <state x="505" y="233" key="search.everywhere.popup" timestamp="1586523656285">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
