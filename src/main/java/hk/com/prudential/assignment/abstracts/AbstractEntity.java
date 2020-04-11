@@ -14,5 +14,5 @@ import org.hibernate.annotations.TypeDefs;
         @TypeDef(name = "json",typeClass = JsonStringType.class),
         @TypeDef(name = "jsonb",typeClass = JsonBinaryType.class)
 })
-public class AbstractEntity extends AbstractObject {
+public abstract class AbstractEntity extends AbstractObject {
 }
