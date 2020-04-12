@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="22b51b50-0866-4b71-a2f1-9c372a25b9d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/CustomerApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/CustomerApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/TicketApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/TicketApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/repository/TicketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/repository/TicketRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/TicketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/TicketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +269,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586522433258</updated>
       <workItem from="1586522435038" duration="6400000" />
-      <workItem from="1586574688118" duration="36893000" />
+      <workItem from="1586574688118" duration="37077000" />
     </task>
     <servers />
   </component>

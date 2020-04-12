@@ -4,7 +4,6 @@ import hk.com.prudential.assignment.base.BaseRestController;
 import hk.com.prudential.assignment.entity.Customer;
 import hk.com.prudential.assignment.model.RestResponse;
 import hk.com.prudential.assignment.service.CustomerService;
-import org.omg.PortableInterceptor.SUCCESSFUL;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -31,7 +30,7 @@ public class CustomerApiController extends BaseRestController {
     }
 
     @PostMapping("/list")
-    public RestResponse add(){
+    public RestResponse list(){
         List<Customer> list = customerService.list();
         return success(list);
     }
