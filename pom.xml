@@ -145,6 +145,10 @@
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
+                <plugin>
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>3.1.0</version>
                 </plugin>
@@ -156,15 +160,6 @@
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.0</version>
-                    <!--                    <configuration>-->
-                    <!--                        <annotationProcessorPaths>-->
-                    <!--                            <path>-->
-                    <!--                                <groupId>org.projectlombok</groupId>-->
-                    <!--                                <artifactId>lombok</artifactId>-->
-                    <!--                                <version>${lombok.version}</version>-->
-                    <!--                            </path>-->
-                    <!--                        </annotationProcessorPaths>-->
-                    <!--                    </configuration>-->
                 </plugin>
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>

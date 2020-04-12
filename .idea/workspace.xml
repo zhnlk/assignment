@@ -2,77 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b51b50-0866-4b71-a2f1-9c372a25b9d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/repository/TicketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/repository/TicketRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/TicketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/TicketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hk/com/prudential/assignment/AssignmentApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hk/com/prudential/assignment/test/CarServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hk/com/prudential/assignment/test/CarServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hk/com/prudential/assignment/test/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hk/com/prudential/assignment/test/CustomerServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hk/com/prudential/assignment/test/TicketServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hk/com/prudential/assignment/test/TicketServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/classes/hk/prudential/assignment/AssignmentApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/classes/hk/prudential/assignment/entity/Car$CarBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/classes/hk/prudential/assignment/entity/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/classes/hk/prudential/assignment/entity/Customer$CustomerBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/classes/hk/prudential/assignment/entity/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/classes/hk/prudential/assignment/entity/Ticket$TicketBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/classes/hk/prudential/assignment/entity/Ticket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/hibernate-validator-6.0.18.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/jackson-annotations-2.10.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/jackson-core-2.10.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/jackson-databind-2.10.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/jackson-datatype-jdk8-2.10.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/jackson-datatype-jsr310-2.10.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/jackson-module-parameter-names-2.10.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/jakarta.validation-api-2.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/jboss-logging-3.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/jul-to-slf4j-1.7.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/log4j-api-2.12.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/log4j-core-2.12.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/log4j-jul-2.12.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/log4j-slf4j-impl-2.12.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/log4j-to-slf4j-2.12.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/lombok-1.18.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/mysql-connector-java-8.0.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/slf4j-api-1.7.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/snakeyaml-1.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-aop-5.2.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-beans-5.2.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-boot-2.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-boot-autoconfigure-2.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-boot-starter-2.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-boot-starter-json-2.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-boot-starter-log4j2-2.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-boot-starter-logging-2.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-boot-starter-tomcat-2.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-boot-starter-validation-2.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-boot-starter-web-2.2.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-context-5.2.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-core-5.2.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-expression-5.2.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-jcl-5.2.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-web-5.2.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/spring-webmvc-5.2.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/tomcat-embed-core-9.0.33.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/tomcat-embed-el-9.0.33.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/lib/tomcat-embed-websocket-9.0.33.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/assignment/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,7 +231,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586522433258</updated>
       <workItem from="1586522435038" duration="6400000" />
-      <workItem from="1586574688118" duration="33460000" />
+      <workItem from="1586574688118" duration="33684000" />
     </task>
     <servers />
   </component>
