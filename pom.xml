@@ -7,7 +7,7 @@
     <groupId>hk.com.prudential</groupId>
     <artifactId>assignment</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <name>assignment of prudential</name>
     <!-- FIXME change it to the project's website -->

@@ -1,6 +1,6 @@
 package hk.com.prudential.assignment.repository;
 
-import hk.com.prudential.assignment.entity.Car;
+import hk.com.prudential.assignment.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,5 +10,5 @@ import org.springframework.stereotype.Repository;
  * @mail tomleader0828@gmail.com
  */
 @Repository
-public interface CustomerRepository extends JpaRepository<Car, String> {
+public interface CustomerRepository extends JpaRepository<Customer, String> {
 }

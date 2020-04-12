@@ -32,5 +32,4 @@ public class Customer extends AbstractTimeScopeEntity {
 
     private String ticket;
 
-
 }
