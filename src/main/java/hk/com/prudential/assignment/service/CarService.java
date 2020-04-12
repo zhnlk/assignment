@@ -5,6 +5,8 @@ import hk.com.prudential.assignment.entity.Car;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 /**
  * @author zhnlk
  * @date 2020/4/11
@@ -14,10 +16,17 @@ public interface CarService extends BaseService<Car> {
 
     Car save(Car car);
 
-    Page<Car> listAll(Pageable pageable);
+    List<Car> listAll();
 
-    Car get(String carId);
+    Page<Car> listPage(Pageable pageable);
+
+    Car getById(String carId);
 
     Car update(Car car);
 
+    List<Car> listCarsInStock();
+
+    List<Car> listByModel(String model);
+
+    void shelvesCar(String id);
 }

@@ -1,6 +1,5 @@
 package hk.com.prudential.assignment.model;
 
-import hk.com.prudential.assignment.constant.GlobalConstant;
 import hk.com.prudential.assignment.abstracts.AbstractObject;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,7 +15,11 @@ import org.springframework.data.domain.Pageable;
 @NoArgsConstructor
 public class BasePageRequest extends AbstractObject {
 
+    int page = 0;
+
+    int size = 20;
+
     public Pageable getPageable() {
-        return PageRequest.of(GlobalConstant.DEFAULT_PAGE, GlobalConstant.DEFAULT_SIZE);
+        return PageRequest.of(page, size);
     }
 }

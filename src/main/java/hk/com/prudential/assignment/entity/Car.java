@@ -8,8 +8,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 /**
@@ -18,6 +17,8 @@ import java.time.LocalDateTime;
  * @mail tomleader0828@gmail.com
  */
 @Data
+@Entity
+@Table(name = "t_car")
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -28,7 +29,7 @@ public class Car extends AbstractTimeScopeEntity {
     @Enumerated(EnumType.STRING)
     private CarStatus status;
 
-    private int timeToDelivery;
+    private int timeToDelivery = 4;
 
     private int remainDaysToDelivery;
 

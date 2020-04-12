@@ -10,8 +10,8 @@ import lombok.Getter;
  */
 public enum RestCode implements BaseEnum {
 
-    SUCCESS("成功", 100000),
-    ERROR("失败", 111111),
+    SUCCESS("success", 100000),
+    ERROR("fail", 111111),
     ;
 
     final private String msg;

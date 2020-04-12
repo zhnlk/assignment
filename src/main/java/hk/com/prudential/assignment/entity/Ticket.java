@@ -7,9 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.ForeignKey;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 /**
@@ -18,6 +16,8 @@ import java.time.LocalDateTime;
  * @mail tomleader0828@gmail.com
  */
 @Data
+@Entity
+@Table(name = "t_ticket")
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -34,5 +34,11 @@ public class Ticket extends AbstractTimeScopeEntity {
     private Car car;
 
     private LocalDateTime orderTime;
+
+    private LocalDateTime startDeliveryTime;
+
+    private LocalDateTime expectReceiveTime;
+
+    private LocalDateTime actualReceiveTime;
 
 }
