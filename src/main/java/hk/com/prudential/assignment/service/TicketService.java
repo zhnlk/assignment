@@ -13,4 +13,6 @@ import java.util.List;
 public interface TicketService extends BaseService<Ticket> {
 
     List<Ticket> list();
+
+    List<Ticket> listByCustomer(String customerId);
 }

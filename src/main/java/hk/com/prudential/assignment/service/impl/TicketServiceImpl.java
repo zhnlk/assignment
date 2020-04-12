@@ -23,4 +23,9 @@ public class TicketServiceImpl implements TicketService {
     public List<Ticket> list() {
         return ticketRepository.findAll();
     }
+
+    @Override
+    public List<Ticket> listByCustomer(String customerId) {
+        return ticketRepository.listByCustomerId(customerId);
+    }
 }

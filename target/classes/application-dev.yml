@@ -4,3 +4,29 @@ server:
 spring:
   application:
     name: assign
+  datasource:
+    username: erancheung
+    password: Passw0rd!@#$
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/assignment?useSSL=false&useUnicode=true&characterEncoding=utf-8&connectionCollation=utf8mb4_unicode_ci&allowPublicKeyRetrieval=true
+    hikari:
+      minimum-idle: 8
+      connection-test-query: SELECT 1
+      maximum-pool-size: 20
+      connection-init-sql: SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+logging:
+  level:
+    org:
+      apache:
+        http:
+          headers: INFO
+          wire: ERROR
+      springframework:
+        web: INFO
