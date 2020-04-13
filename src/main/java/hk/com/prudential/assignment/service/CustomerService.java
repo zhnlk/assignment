@@ -13,4 +13,6 @@ import java.util.List;
 public interface CustomerService extends BaseService<Customer> {
 
     List<Customer> list();
+
+    Customer save(Customer build);
 }

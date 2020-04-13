@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b51b50-0866-4b71-a2f1-9c372a25b9d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx/conf.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/config/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-azure.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/db.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/CustomerApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/CustomerApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/CustomerServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +248,7 @@
       <updated>1586522433258</updated>
       <workItem from="1586522435038" duration="6400000" />
       <workItem from="1586574688118" duration="41550000" />
-      <workItem from="1586725557223" duration="9351000" />
+      <workItem from="1586725557223" duration="9746000" />
     </task>
     <servers />
   </component>
@@ -297,10 +288,10 @@
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
     <state x="2661" y="140" key="#com.intellij.fileTypes.FileTypeChooser/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586725465956" />
-    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser" timestamp="1586713826065">
+    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser" timestamp="1586790991330">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
-    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586713826065" />
+    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586790991330" />
     <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser/1680.-390.2560.1440/0.23.1680.1027@1680.-390.2560.1440" timestamp="1586673481850" />
     <state x="2655" y="-105" key="#docker/Dockerfile" timestamp="1586719621668">
       <screen x="1680" y="-390" width="2560" height="1440" />

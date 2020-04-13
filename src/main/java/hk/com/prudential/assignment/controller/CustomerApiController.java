@@ -5,11 +5,9 @@ import hk.com.prudential.assignment.entity.Customer;
 import hk.com.prudential.assignment.model.RestResponse;
 import hk.com.prudential.assignment.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -27,6 +25,13 @@ public class CustomerApiController extends BaseRestController {
     @GetMapping("/ping")
     public String ping(){
         return "pong";
+    }
+
+    @PostMapping("/save")
+    public RestResponse save(@RequestParam("name") @NotNull String name){
+        Customer build = Customer.builder().name(name).build();
+        Customer save = customerService.save(build);
+        return  success(save);
     }
 
     @PostMapping("/list")
