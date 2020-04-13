@@ -29,6 +29,5 @@ public class TicketServiceTest {
     public void testTicketList() {
         List<Ticket> list = ticketService.list();
 
-
     }
 }

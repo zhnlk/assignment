@@ -44,7 +44,7 @@ public class CarServiceTest {
     @Test
     public void testGetById() {
         String carId = "ff808081716d245201716d250b1e0000";
-        Car byId = carService.getById(carId);
+        Car byId = carService.getById(carId).orElse(null);
         Assert.assertNotNull("car is wrong", byId);
     }
 
