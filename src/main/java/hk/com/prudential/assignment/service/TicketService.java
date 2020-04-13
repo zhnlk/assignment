@@ -4,6 +4,7 @@ import hk.com.prudential.assignment.base.BaseService;
 import hk.com.prudential.assignment.entity.Ticket;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author zhnlk
@@ -15,4 +16,8 @@ public interface TicketService extends BaseService<Ticket> {
     List<Ticket> list();
 
     List<Ticket> listByCustomer(String customerId);
+
+    Optional<Ticket> getById(String ticketId);
+
+    Ticket save(Ticket ticket);
 }

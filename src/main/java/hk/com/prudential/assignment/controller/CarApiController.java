@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
@@ -78,11 +79,11 @@ public class CarApiController extends BaseRestController {
 
     @PostMapping("/shelves")
     public RestResponse shelves(@RequestParam("id") @NotNull String id) {
-        Car byId = carService.getById(id);
-        if (null == byId) {
-            return error(RestCode.ERROR);
-        } else {
+        Optional<Car> car = carService.getById(id);
+        if (car.isPresent()) {
             carService.shelvesCar(id);
+        } else {
+            return error(RestCode.ERROR);
         }
         return success();
     }

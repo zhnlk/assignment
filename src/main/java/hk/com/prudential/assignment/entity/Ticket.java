@@ -39,6 +39,8 @@ public class Ticket extends AbstractTimeScopeEntity {
 
     private LocalDateTime expectReceiveTime;
 
+    private LocalDateTime actualReturnTime;
+
     private LocalDateTime actualReceiveTime;
 
 }

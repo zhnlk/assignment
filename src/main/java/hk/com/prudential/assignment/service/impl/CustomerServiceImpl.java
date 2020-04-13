@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author zhnlk
@@ -27,5 +28,10 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public Customer save(Customer build) {
         return customerRepository.save(build);
+    }
+
+    @Override
+    public Optional<Customer> getById(String customerId) {
+        return customerRepository.findById(customerId);
     }
 }

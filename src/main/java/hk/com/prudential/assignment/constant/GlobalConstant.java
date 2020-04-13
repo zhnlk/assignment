@@ -10,5 +10,7 @@ public interface GlobalConstant {
     int DEFAULT_PAGE = 0;
     int DEFAULT_SIZE = 20;
 
+    int TIME_TO_DELIVERY = 4;
+
     String LOG_ID = "TRACK_LOG_ID";
 }

@@ -3,9 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="22b51b50-0866-4b71-a2f1-9c372a25b9d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/CustomerApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/CustomerApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/constant/GlobalConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/constant/GlobalConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/CarApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/CarApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/TicketApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/TicketApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/entity/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/entity/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/CarService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/CarServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/service/impl/TicketServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +255,7 @@
       <updated>1586522433258</updated>
       <workItem from="1586522435038" duration="6400000" />
       <workItem from="1586574688118" duration="41550000" />
-      <workItem from="1586725557223" duration="9746000" />
+      <workItem from="1586725557223" duration="13084000" />
     </task>
     <servers />
   </component>
@@ -288,10 +295,10 @@
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
     <state x="2661" y="140" key="#com.intellij.fileTypes.FileTypeChooser/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586725465956" />
-    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser" timestamp="1586790991330">
+    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser" timestamp="1586792543202">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
-    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586790991330" />
+    <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586792543202" />
     <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser/1680.-390.2560.1440/0.23.1680.1027@1680.-390.2560.1440" timestamp="1586673481850" />
     <state x="2655" y="-105" key="#docker/Dockerfile" timestamp="1586719621668">
       <screen x="1680" y="-390" width="2560" height="1440" />

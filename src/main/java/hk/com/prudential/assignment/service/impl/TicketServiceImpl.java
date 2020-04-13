@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author zhnlk
@@ -27,5 +28,15 @@ public class TicketServiceImpl implements TicketService {
     @Override
     public List<Ticket> listByCustomer(String customerId) {
         return ticketRepository.listByCustomerId(customerId);
+    }
+
+    @Override
+    public Optional<Ticket> getById(String ticketId) {
+        return ticketRepository.findById(ticketId);
+    }
+
+    @Override
+    public Ticket save(Ticket ticket) {
+        return ticketRepository.save(ticket);
     }
 }
