@@ -2,6 +2,7 @@ package hk.com.prudential.assignment.test;
 
 import hk.com.prudential.assignment.AssignmentApplication;
 import hk.com.prudential.assignment.entity.Car;
+import hk.com.prudential.assignment.enums.CarStatus;
 import hk.com.prudential.assignment.service.CarService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
@@ -11,9 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author zhnlk
@@ -46,6 +49,41 @@ public class CarServiceTest {
         String carId = "ff808081716d245201716d250b1e0000";
         Car byId = carService.getById(carId).orElse(null);
         Assert.assertNotNull("car is wrong", byId);
+    }
+
+    @Test
+    public void testCarSave() {
+        Car car = Car.builder().model("test car").build();
+        Car save = carService.save(car);
+
+        Assert.assertEquals(car, save);
+    }
+
+    @Test
+    public void testCarUpdate() {
+        String model = "new_model";
+        String carId = "ff808081716d245201716d250b1e0000";
+        Car car = carService.getById(carId).orElse(null);
+
+        assert car != null;
+
+        car.setModel(model);
+        Car save = carService.save(car);
+
+        Assert.assertEquals(save.getModel(), model);
+
+    }
+
+    @Test
+    public void testShelvesCar() {
+        String carId = "ff808081716d245201716d250b1e0000";
+        carService.shelvesCar(carId);
+
+        Car car = carService.getById(carId).orElse(null);
+        assert car != null;
+
+        Assert.assertEquals(car.getStatus(), CarStatus.SHELVES);
+
     }
 
 }

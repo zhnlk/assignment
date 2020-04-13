@@ -4,6 +4,7 @@
     <list default="true" id="22b51b50-0866-4b71-a2f1-9c372a25b9d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hk/com/prudential/assignment/test/CarServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hk/com/prudential/assignment/test/CarServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hk/com/prudential/assignment/test/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hk/com/prudential/assignment/test/CustomerServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hk/com/prudential/assignment/test/TicketServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hk/com/prudential/assignment/test/TicketServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +83,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="sqlite&#10;mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -247,7 +249,7 @@
       <updated>1586522433258</updated>
       <workItem from="1586522435038" duration="6400000" />
       <workItem from="1586574688118" duration="41550000" />
-      <workItem from="1586725557223" duration="14780000" />
+      <workItem from="1586725557223" duration="16797000" />
     </task>
     <servers />
   </component>
@@ -256,6 +258,9 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.d" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2560" y="-5" key="#Assign_Data_Sources" timestamp="1586673692168">
