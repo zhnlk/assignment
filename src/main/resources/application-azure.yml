@@ -8,7 +8,7 @@ spring:
     username: root
     password: Passw0rd!@#$
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://52.156.49.150:3306/assignment?useSSL=false&useUnicode=true&characterEncoding=utf-8&connectionCollation=utf8mb4_unicode_ci&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://assignmentdb:3306/assignment?useSSL=false&useUnicode=true&characterEncoding=utf-8&connectionCollation=utf8mb4_unicode_ci&allowPublicKeyRetrieval=true
     hikari:
       minimum-idle: 8
       connection-test-query: SELECT 1
