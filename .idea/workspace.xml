@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b51b50-0866-4b71-a2f1-9c372a25b9d0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/conf.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-azure.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/CustomerApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/CustomerApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/TicketApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hk/com/prudential/assignment/controller/TicketApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/db.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,27 +50,6 @@
         <item name="assignment@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="assignment: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="assignment@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="assignment: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="t_car: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="assignment@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="assignment: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="t_customer: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="assignment@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="assignment: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="t_ticket: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -106,7 +92,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DatabaseDriversLRU" value="sqlite&#10;mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -126,16 +112,20 @@
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="hk.com.prudential.assignment.repository" />
       <recent name="hk.com.prudential.assignment.json.description" />
       <recent name="hk.prudential.assignment.controller" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/docker" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -171,7 +161,8 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="hk.prudential.assignment.AssignmentApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hk.com.prudential.assignment.AssignmentApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -247,10 +238,6 @@
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:assignment@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -269,12 +256,16 @@
       <option name="presentableId" value="Default" />
       <updated>1586522433258</updated>
       <workItem from="1586522435038" duration="6400000" />
-      <workItem from="1586574688118" duration="37077000" />
+      <workItem from="1586574688118" duration="41550000" />
+      <workItem from="1586725557223" duration="9351000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.d" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2560" y="-5" key="#Assign_Data_Sources" timestamp="1586673692168">
@@ -282,10 +273,10 @@
     </state>
     <state x="2560" y="-5" key="#Assign_Data_Sources/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586673692168" />
     <state x="2560" y="-5" key="#Assign_Data_Sources/1680.-390.2560.1440/0.23.1680.1027@1680.-390.2560.1440" timestamp="1586673604107" />
-    <state x="2576" y="-36" key="#AssignmentApplication" timestamp="1586707573283">
+    <state x="2576" y="-36" key="#AssignmentApplication" timestamp="1586728184529">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
-    <state x="2576" y="-36" key="#AssignmentApplication/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586707573283" />
+    <state x="2576" y="-36" key="#AssignmentApplication/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586728184529" />
     <state x="2576" y="-36" key="#AssignmentApplication_(1)" timestamp="1586674176797">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
@@ -294,75 +285,87 @@
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
     <state x="1932" y="183" key="#Azure_Web_App:_assignment:assignment/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586711027943" />
-    <state x="2560" y="-5" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586592971938">
+    <state x="2560" y="-5" key="#Project_Structure" timestamp="1586726773815">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
-    <state x="2560" y="-5" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586592971938" />
+    <state x="2560" y="-5" key="#Project_Structure/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586726773815" />
+    <state x="2560" y="-5" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586727379232">
+      <screen x="1680" y="-390" width="2560" height="1440" />
+    </state>
+    <state x="2560" y="-5" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586727379232" />
+    <state x="2661" y="140" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586725465956">
+      <screen x="1680" y="-390" width="2560" height="1440" />
+    </state>
+    <state x="2661" y="140" key="#com.intellij.fileTypes.FileTypeChooser/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586725465956" />
     <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser" timestamp="1586713826065">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
     <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586713826065" />
     <state x="2700" y="38" key="#com.intellij.ide.util.MemberChooser/1680.-390.2560.1440/0.23.1680.1027@1680.-390.2560.1440" timestamp="1586673481850" />
-    <state width="2518" height="562" key="GridCell.Tab.0.bottom" timestamp="1586713595761">
+    <state x="2655" y="-105" key="#docker/Dockerfile" timestamp="1586719621668">
+      <screen x="1680" y="-390" width="2560" height="1440" />
+    </state>
+    <state x="2655" y="-105" key="#docker/Dockerfile/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586719621668" />
+    <state width="1991" height="423" key="GridCell.Tab.0.bottom" timestamp="1586729040092">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.bottom/1680.-390.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1586523674406" />
-    <state width="2518" height="562" key="GridCell.Tab.0.bottom/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586713595761" />
+    <state width="1991" height="423" key="GridCell.Tab.0.bottom/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586729040092" />
     <state width="2518" height="562" key="GridCell.Tab.0.bottom/1680.-390.2560.1440/0.23.1680.1027@1680.-390.2560.1440" timestamp="1586673506254" />
     <state width="1742" height="423" key="GridCell.Tab.0.bottom/1680.-390.2560.1440/41.23.1639.1027@1680.-390.2560.1440" timestamp="1586677088693" />
-    <state width="2518" height="562" key="GridCell.Tab.0.center" timestamp="1586713595760">
+    <state width="1991" height="423" key="GridCell.Tab.0.center" timestamp="1586729040090">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.center/1680.-390.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1586523674404" />
-    <state width="2518" height="562" key="GridCell.Tab.0.center/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586713595760" />
+    <state width="1991" height="423" key="GridCell.Tab.0.center/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586729040090" />
     <state width="2518" height="562" key="GridCell.Tab.0.center/1680.-390.2560.1440/0.23.1680.1027@1680.-390.2560.1440" timestamp="1586673506252" />
     <state width="1742" height="423" key="GridCell.Tab.0.center/1680.-390.2560.1440/41.23.1639.1027@1680.-390.2560.1440" timestamp="1586677088684" />
-    <state width="2518" height="562" key="GridCell.Tab.0.left" timestamp="1586713595759">
+    <state width="1991" height="423" key="GridCell.Tab.0.left" timestamp="1586729040089">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.left/1680.-390.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1586523674403" />
-    <state width="2518" height="562" key="GridCell.Tab.0.left/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586713595759" />
+    <state width="1991" height="423" key="GridCell.Tab.0.left/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586729040089" />
     <state width="2518" height="562" key="GridCell.Tab.0.left/1680.-390.2560.1440/0.23.1680.1027@1680.-390.2560.1440" timestamp="1586673506251" />
     <state width="1742" height="423" key="GridCell.Tab.0.left/1680.-390.2560.1440/41.23.1639.1027@1680.-390.2560.1440" timestamp="1586677088680" />
-    <state width="2518" height="562" key="GridCell.Tab.0.right" timestamp="1586713595760">
+    <state width="1991" height="423" key="GridCell.Tab.0.right" timestamp="1586729040091">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.right/1680.-390.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1586523674405" />
-    <state width="2518" height="562" key="GridCell.Tab.0.right/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586713595760" />
+    <state width="1991" height="423" key="GridCell.Tab.0.right/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586729040091" />
     <state width="2518" height="562" key="GridCell.Tab.0.right/1680.-390.2560.1440/0.23.1680.1027@1680.-390.2560.1440" timestamp="1586673506253" />
     <state width="1742" height="423" key="GridCell.Tab.0.right/1680.-390.2560.1440/41.23.1639.1027@1680.-390.2560.1440" timestamp="1586677088690" />
-    <state width="1991" height="423" key="GridCell.Tab.1.bottom" timestamp="1586707831134">
+    <state width="1991" height="423" key="GridCell.Tab.1.bottom" timestamp="1586729040095">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
-    <state width="1991" height="423" key="GridCell.Tab.1.bottom/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586707831134" />
+    <state width="1991" height="423" key="GridCell.Tab.1.bottom/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586729040095" />
     <state width="2518" height="562" key="GridCell.Tab.1.bottom/1680.-390.2560.1440/0.23.1680.1027@1680.-390.2560.1440" timestamp="1586673506258" />
     <state width="1742" height="423" key="GridCell.Tab.1.bottom/1680.-390.2560.1440/41.23.1639.1027@1680.-390.2560.1440" timestamp="1586677088699" />
-    <state width="1991" height="423" key="GridCell.Tab.1.center" timestamp="1586707831133">
+    <state width="1991" height="423" key="GridCell.Tab.1.center" timestamp="1586729040093">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
-    <state width="1991" height="423" key="GridCell.Tab.1.center/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586707831133" />
+    <state width="1991" height="423" key="GridCell.Tab.1.center/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586729040093" />
     <state width="2518" height="562" key="GridCell.Tab.1.center/1680.-390.2560.1440/0.23.1680.1027@1680.-390.2560.1440" timestamp="1586673506256" />
     <state width="1742" height="423" key="GridCell.Tab.1.center/1680.-390.2560.1440/41.23.1639.1027@1680.-390.2560.1440" timestamp="1586677088697" />
-    <state width="1991" height="423" key="GridCell.Tab.1.left" timestamp="1586707831133">
+    <state width="1991" height="423" key="GridCell.Tab.1.left" timestamp="1586729040092">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
-    <state width="1991" height="423" key="GridCell.Tab.1.left/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586707831133" />
+    <state width="1991" height="423" key="GridCell.Tab.1.left/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586729040092" />
     <state width="2518" height="562" key="GridCell.Tab.1.left/1680.-390.2560.1440/0.23.1680.1027@1680.-390.2560.1440" timestamp="1586673506255" />
     <state width="1742" height="423" key="GridCell.Tab.1.left/1680.-390.2560.1440/41.23.1639.1027@1680.-390.2560.1440" timestamp="1586677088695" />
-    <state width="1991" height="423" key="GridCell.Tab.1.right" timestamp="1586707831134">
+    <state width="1991" height="423" key="GridCell.Tab.1.right" timestamp="1586729040094">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
-    <state width="1991" height="423" key="GridCell.Tab.1.right/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586707831134" />
+    <state width="1991" height="423" key="GridCell.Tab.1.right/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586729040094" />
     <state width="2518" height="562" key="GridCell.Tab.1.right/1680.-390.2560.1440/0.23.1680.1027@1680.-390.2560.1440" timestamp="1586673506257" />
     <state width="1742" height="423" key="GridCell.Tab.1.right/1680.-390.2560.1440/41.23.1639.1027@1680.-390.2560.1440" timestamp="1586677088698" />
-    <state x="2498" y="-8" key="Maven.ArtifactSearchDialog" timestamp="1586595088576">
+    <state x="2498" y="-8" key="Maven.ArtifactSearchDialog" timestamp="1586715178152">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
-    <state x="2498" y="-8" key="Maven.ArtifactSearchDialog/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586595088576" />
-    <state x="2202" y="-31" width="1256" height="722" key="SettingsEditor" timestamp="1586575983032">
+    <state x="2498" y="-8" key="Maven.ArtifactSearchDialog/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586715178152" />
+    <state x="2202" y="-31" width="1256" height="722" key="SettingsEditor" timestamp="1586725532715">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
-    <state x="2202" y="-31" width="1256" height="722" key="SettingsEditor/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586575983032" />
+    <state x="2202" y="-31" width="1256" height="722" key="SettingsEditor/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586725532715" />
     <state x="458" y="389" key="SignInWindow" timestamp="1586522541299">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -371,10 +374,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="602" y="261" key="SubscriptionsDialog/1680.-390.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1586522547554" />
-    <state x="2637" y="163" key="com.intellij.ide.util.TipDialog" timestamp="1586574693826">
+    <state x="2637" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1586725556278">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
-    <state x="2637" y="163" key="com.intellij.ide.util.TipDialog/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586574693826" />
+    <state x="2637" y="177" key="com.intellij.ide.util.TipDialog/1680.-390.2560.1440/0.0.1680.1050@1680.-390.2560.1440" timestamp="1586725556278" />
     <state x="2618" y="87" width="683" height="486" key="find.popup" timestamp="1586599807306">
       <screen x="1680" y="-390" width="2560" height="1440" />
     </state>

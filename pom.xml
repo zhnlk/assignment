@@ -10,9 +10,6 @@
     <packaging>jar</packaging>
 
     <name>assignment of prudential</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
-
     <developers>
         <developer>
             <id>zhnlk</id>
@@ -26,9 +23,15 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <spring-boot.version>2.2.6.RELEASE</spring-boot.version>
         <springfox-swagger.version>2.9.2</springfox-swagger.version>
+
+        <!-- docker 配置 -->
+        <docker.plugin.version>1.2.0</docker.plugin.version>
+        <!-- 阿里云镜像仓库服务器地址 -->
+        <docker.repostory>registry.docker-cn.com</docker.repostory>
+        <!-- 阿里云容器镜像的命名空间 -->
+        <docker.registry.namespace>zhnlk</docker.registry.namespace>
     </properties>
 
-    <!-- 定义公共资源版本 -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -59,21 +62,17 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
-
-        <!-- swagger核心组件，在代码配置swagger时会依赖到它 -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>${springfox-swagger.version}</version>
         </dependency>
-        <!-- swagger的用户界面，用于展示api接口文档 -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${springfox-swagger.version}</version>
         </dependency>
 
-        <!-- 包含 mvc,aop 等jar资源 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -84,41 +83,10 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!--        &lt;!&ndash; 映入tomcat &ndash;&gt;-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.springframework.boot</groupId>-->
-        <!--            <artifactId>spring-boot-starter-tomcat</artifactId>-->
-        <!--        </dependency>-->
-        <!--        &lt;!&ndash; jsp的整合依赖 &ndash;&gt;-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.apache.tomcat.embed</groupId>-->
-        <!--            <artifactId>tomcat-embed-jasper</artifactId>-->
-        <!--        </dependency>-->
-        <!-- 整合ssm -->
-        <!--        <dependency>-->
-        <!--            <groupId>org.mybatis.spring.boot</groupId>-->
-        <!--            <artifactId>mybatis-spring-boot-starter</artifactId>-->
-        <!--        </dependency>-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-        <!-- 日志依赖 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-log4j2</artifactId>
-        </dependency>
-        <!-- jstl标签架包 -->
-        <!--        <dependency>-->
-        <!--            <groupId>javax.servlet</groupId>-->
-        <!--            <artifactId>jstl</artifactId>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>taglibs</groupId>-->
-        <!--            <artifactId>standard</artifactId>-->
-        <!--            <version>1.1.2</version>-->
-        <!--        </dependency>-->
-        <!-- 热部署 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -140,14 +108,112 @@
         </dependency>
     </dependencies>
 
+
     <build>
         <finalName>assignment</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.yml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.yml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/docker</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/Dockerfile</include>
+                </includes>
+                <targetPath>../docker</targetPath>
+            </resource>
+        </resources>
+
         <plugins>
+            <!-- 打包 -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- docker 打包插件：可以直接copy使用，注意复制 properties，详细配置步骤参考 doc -->
+            <!-- 绑定maven生命周期与docker image -->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>${docker.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>build-image</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>tag-image</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>tag</goal>
+                        </goals>
+                        <configuration>
+                            <image>
+                                ${docker.repostory}/${docker.registry.namespace}/${project.artifactId}:latest
+                            </image>
+                            <newName>
+                                ${docker.repostory}/${docker.registry.namespace}/${project.artifactId}:latest
+                            </newName>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>push-image</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>push</goal>
+                        </goals>
+                        <configuration>
+                            <imageName>
+                                ${docker.repostory}/${docker.registry.namespace}/${project.artifactId}:${project.version}
+                            </imageName>
+                        </configuration>
+                    </execution>
+                </executions>
                 <configuration>
-                    <fork>true</fork>  <!--如果没有该项配置，可能devtools不会起作用，即应用不会restart -->
+                    <serverId>docker</serverId>
+                    <registryUrl>${docker.repostory}</registryUrl>
+                    <pushImageTag>false</pushImageTag>
+                    <!-- 指定Dockerfile文件所在的目录 -->
+                    <dockerDirectory>${project.build.directory}/docker</dockerDirectory>
+                    <imageName>
+                        ${docker.registry.namespace}/${project.artifactId}:${project.version}
+                    </imageName>
+                    <imageTags>
+                        <imageTag>${project.version}</imageTag>
+                        <imageTag>latest</imageTag>
+                    </imageTags>
+                    <!-- 复制指定的文件到 dockerDirectory 指定的位置 -->
+                    <resources>
+                        <!-- jar文件 -->
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
                 </configuration>
             </plugin>
             <plugin>

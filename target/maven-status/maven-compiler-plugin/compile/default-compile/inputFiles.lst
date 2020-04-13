@@ -1,3 +1,4 @@
+/Users/eran/assignment/src/main/java/hk/com/prudential/assignment/config/WebMvcConfig.java
 /Users/eran/assignment/src/main/java/hk/com/prudential/assignment/controller/CustomerApiController.java
 /Users/eran/assignment/src/main/java/hk/com/prudential/assignment/service/impl/TicketServiceImpl.java
 /Users/eran/assignment/src/main/java/hk/com/prudential/assignment/json/description/JsonBinarySqlTypeDescriptor.java

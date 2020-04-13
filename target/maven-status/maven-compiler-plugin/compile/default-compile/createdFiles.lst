@@ -25,6 +25,7 @@ hk/com/prudential/assignment/base/BaseRestController.class
 hk/com/prudential/assignment/controller/CustomerApiController.class
 hk/com/prudential/assignment/json/description/AbstractJsonSqlTypeDescriptor$1.class
 hk/com/prudential/assignment/utils/JacksonUtil.class
+hk/com/prudential/assignment/config/WebMvcConfig.class
 hk/com/prudential/assignment/service/CustomerService.class
 hk/com/prudential/assignment/enums/CarStatus.class
 hk/com/prudential/assignment/model/BasePageRequest.class
